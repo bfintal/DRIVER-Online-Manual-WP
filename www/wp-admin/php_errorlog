@@ -1,0 +1,44 @@
+[02-Oct-2017 05:40:04 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'glt_deactivate' not found or invalid function name in /home/gambit01/public_html/roadsafety.ph/wp-includes/class-wp-hook.php on line 298
+[02-Oct-2017 15:54:14 UTC] WordPress database error Illegal mix of collations (utf8mb4_unicode_520_ci,IMPLICIT) and (utf8mb4_unicode_ci,IMPLICIT) for operation '=' for query DELETE synch.*
+				  FROM
+					 wpxi_blc_synch AS synch
+					 LEFT JOIN wpxi_posts AS posts
+					 ON (synch.container_id = posts.ID and synch.container_type = posts.post_type)
+				  WHERE
+					 posts.post_status NOT IN ('publish') made by activate_plugin, do_action('activate_broken-link-checker/broken-link-checker.php'), WP_Hook->do_action, WP_Hook->apply_filters, blc_activation_hook, require('/plugins/broken-link-checker/includes/activation.php'), blcModuleManager->plugin_activated, blcModule->plugin_activated, blcContainerManager->activated, blcAnyPostContainerManager->resynch, blcPostTypeOverlord->resynch
+[02-Oct-2017 15:54:14 UTC] WordPress database error Illegal mix of collations (utf8mb4_unicode_520_ci,IMPLICIT) and (utf8mb4_unicode_ci,IMPLICIT) for operation '=' for query UPDATE
+					wpxi_blc_synch AS synch
+					JOIN wpxi_posts AS posts ON (synch.container_id = posts.ID and synch.container_type=posts.post_type)
+				  SET 
+					synched = 0
+				  WHERE
+					synch.last_synch < posts.post_modified made by activate_plugin, do_action('activate_broken-link-checker/broken-link-checker.php'), WP_Hook->do_action, WP_Hook->apply_filters, blc_activation_hook, require('/plugins/broken-link-checker/includes/activation.php'), blcModuleManager->plugin_activated, blcModule->plugin_activated, blcContainerManager->activated, blcAnyPostContainerManager->resynch, blcPostTypeOverlord->resynch
+[02-Oct-2017 15:54:14 UTC] WordPress database error Illegal mix of collations (utf8mb4_unicode_520_ci,IMPLICIT) and (utf8mb4_unicode_ci,IMPLICIT) for operation '=' for query INSERT INTO wpxi_blc_synch(container_id, container_type, synched)
+				  SELECT posts.id, posts.post_type, 0
+				  FROM 
+				    wpxi_posts AS posts LEFT JOIN wpxi_blc_synch AS synch
+					ON (synch.container_id = posts.ID and synch.container_type=posts.post_type)  
+				  WHERE
+				  	posts.post_status IN ('publish')
+	 				AND posts.post_type IN ('post', 'page')
+					AND synch.container_id IS NULL made by activate_plugin, do_action('activate_broken-link-checker/broken-link-checker.php'), WP_Hook->do_action, WP_Hook->apply_filters, blc_activation_hook, require('/plugins/broken-link-checker/includes/activation.php'), blcModuleManager->plugin_activated, blcModule->plugin_activated, blcContainerManager->activated, blcAnyPostContainerManager->resynch, blcPostTypeOverlord->resynch
+[02-Oct-2017 16:14:29 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM wpxi_blc_links
+			USING wpxi_blc_links LEFT JOIN wpxi_blc_instances 
+				ON wpxi_blc_instances.link_id = wpxi_blc_links.link_id
+			WHERE
+				wpxi_blc_instances.link_id IS NULL made by wp_trash_post, wp_insert_post, wp_transition_post_status, do_action('trash_post'), WP_Hook->do_action, WP_Hook->apply_filters, blcPostTypeOverlord->post_deleted, blc_cleanup_links
+[03-Oct-2017 12:31:17 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM wpxi_blc_links
+			USING wpxi_blc_links LEFT JOIN wpxi_blc_instances 
+				ON wpxi_blc_instances.link_id = wpxi_blc_links.link_id
+			WHERE
+				wpxi_blc_instances.link_id IS NULL made by wp_delete_post, do_action('delete_post'), WP_Hook->do_action, WP_Hook->apply_filters, blcPostTypeOverlord->post_deleted, blc_cleanup_links
+[04-Oct-2017 05:51:17 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM wpxi_blc_links
+			USING wpxi_blc_links LEFT JOIN wpxi_blc_instances 
+				ON wpxi_blc_instances.link_id = wpxi_blc_links.link_id
+			WHERE
+				wpxi_blc_instances.link_id IS NULL made by wp_trash_post, wp_insert_post, wp_transition_post_status, do_action('trash_post'), WP_Hook->do_action, WP_Hook->apply_filters, blcPostTypeOverlord->post_deleted, blc_cleanup_links
+[10-Oct-2017 05:59:18 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM wpxi_blc_links
+			USING wpxi_blc_links LEFT JOIN wpxi_blc_instances 
+				ON wpxi_blc_instances.link_id = wpxi_blc_links.link_id
+			WHERE
+				wpxi_blc_instances.link_id IS NULL made by wp_trash_post, wp_insert_post, wp_transition_post_status, do_action('trash_post'), WP_Hook->do_action, WP_Hook->apply_filters, blcPostTypeOverlord->post_deleted, blc_cleanup_links

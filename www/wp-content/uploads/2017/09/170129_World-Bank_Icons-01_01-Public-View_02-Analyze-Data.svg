@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#EAEAEA;}
+	.st1{fill:#CCCCCC;}
+	.st2{fill:#B3B3B3;}
+	.st3{clip-path:url(#SVGID_2_);fill:#FFFFFF;}
+	.st4{opacity:0.35;clip-path:url(#SVGID_2_);fill:#E6E6E6;}
+	.st5{opacity:0.35;clip-path:url(#SVGID_2_);fill:#CCCCCC;}
+	.st6{fill:none;stroke:#344055;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st7{fill:#266DD3;}
+</style>
+<polyline class="st0" points="36,53.3 36,30.3 45.6,30.3 45.6,53.3 "/>
+<polyline class="st1" points="23,53.3 23,0 32.6,0 32.6,53.3 "/>
+<polyline class="st2" points="10,53.3 10,12.6 19.6,12.6 19.6,53.3 "/>
+<g>
+	<defs>
+		
+			<ellipse id="SVGID_1_" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -8.2172 33.1579)" cx="35.9" cy="26.5" rx="10.1" ry="10.1"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<rect x="23.4" y="10.8" class="st3" width="24.8" height="31"/>
+	<polyline class="st4" points="40.1,47.7 40.1,21.7 51.5,21.7 51.5,47.7 	"/>
+	<polyline class="st5" points="24.6,47.7 24.6,-12 36,-12 36,47.7 	"/>
+	<use xlink:href="#SVGID_1_"  style="overflow:visible;fill:none;stroke:#344055;stroke-miterlimit:10;"/>
+</g>
+<line class="st6" x1="43.1" y1="33.6" x2="47.7" y2="38.2"/>
+<path class="st7" d="M57,47.2l-0.4,0.4c-0.7,0.7-2,0.7-2.7,0l-8.2-8.2c-0.7-0.7-0.7-2,0-2.7l0.4-0.4c0.7-0.7,2-0.7,2.7,0l8.2,8.2
+	C57.7,45.3,57.7,46.5,57,47.2z"/>
+<line class="st6" x1="47.7" y1="55.7" x2="7.9" y2="55.7"/>
+</svg>
